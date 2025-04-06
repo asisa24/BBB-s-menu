@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBB page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="BBB.jpg" class="img">
+        </section>
+        <hr>
+        
+        <br>
+        <h1>menus</h1>
+        <nav>
+            <ul>
+                <li><a href="menu.html" target="_blank">our burger menu</a></li>
+                <li><a href="menu2.html" target="_blank">Our mains dishes menu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h2>About us</h2>
+        <p style="font-size: large;">BBB is a burger place where you can eat with you family and friends, we serve burgers and many more</p>
+    </main>
+    <hr>
+    <footer>
+        <p> address: <address>alonit Ein shemer</address>
+        </p>
+        <hr>
+        <p><b><u>leave a review:</u></b></p>
+
+        <form action="homepage.html" method="post">
+            <label for="name">name:</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <div aria-required="true">
+                <input type="radio" name="rating" value="bad" required> bad
+                <input type="radio" name="rating" value="good"> good
+                <input type="radio" name="rating" value="excellent"> excellent
+            </div>
+
+            <label for="review">review:</label>
+            <textarea name="review" id="review" cols="30" rows="10" required></textarea>
+            <br>
+            <button type="submit">
+                submit
+            </button>
+        </form>
+    </footer>
+</body>
+</html>

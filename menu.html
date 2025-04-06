@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger's menu</title>
+    <style>
+        .text {
+            position: relative;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .form {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#SearchBar {
+    background: transparent;
+    flex: 1;
+    border: 0px;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+}
+.sa {
+
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 3px gray;
+}
+.sa button {
+    cursor: pointer;
+    border-radius: 20px;
+    height: 45px;
+    width: 45px;
+    padding-right: 20px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sa button img{
+    height: 25px;
+    padding-left: 70%;
+}
+
+        .menu-item {
+            flex: 1 1 30%;
+            margin: 10px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+            margin-left: 10px;
+        }
+
+        .button {
+            background-color: #00e0c2;
+            border-radius: 10px;
+            height: 30px;
+            font-size: larger;
+            box-shadow: 0px 0px 5px black;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: black;
+            color: #00e0c2;
+        }
+        .button:active {
+            color: gray;
+        }
+
+        span {
+            display: flex;
+            justify-content: end;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        .text2 {
+            margin-left: 10px;
+            font-size: 19px;
+        }
+    </style>
+</head>
+
+<body>
+    <header >
+        <section style="display: flex; justify-content: center;">
+            <img src="BBB.jpg" style="height: 80px; width: 150px;">
+        </section>
+        <hr>
+    <div class="form">    
+        <form action="" class="sa">
+            <input type="search" placeholder="Search anything..." id="SearchBar">
+            <button type="submit"><img src="הורדה.png"></button>
+        </form>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="homepage.html" target="_blank" style="font-size: large;">Hompage</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main style=" max-height: 900px;">
+        
+        <h1 style="font-weight: 200;" class="text">Menu</h1>
+        <h2 class="text"><u>Hamburgers:</u></h2>
+        <div class="menu">
+            <figure class="menu">
+                <div class="menu-item">
+                    <h4 class="text2">B burger</h4>
+                    <img src="B burger.jpg" style="height: 92px;" alt="B burger">
+                    <figcaption style="max-width: 350px;" class="text2">About 160 grams (before grilling) of fresh,
+                        high-quality ground meat
+                        Served on a bun with iceberg lettuce, tomato, red onion and pickled cucumber slices</figcaption>
+                    <p class="text2">cost: 59₪</p>
+                    <span><button class="button">Order</button></span>
+                </div>
+
+                <div class="menu-item">
+                    <h4 class="text2">BB burger</h4>
+                    <img src="B burger.jpg" style="height: 92px;" alt="BB burger">
+                    <figcaption style="max-width: 350px;" class="text2">About 220 grams (before grilling) of fresh,
+                        high-quality ground meat
+                        Served on a bun with iceberg lettuce, tomato, red onion and pickled cucumber slices</figcaption>
+                    <p class="text2">cost: 69₪</p>
+                    <span><button class="button">Order</button></span>
+                </div>
+
+                <div class="menu-item">
+                    <h4 class="text2">BBB burger</h4>
+                    <img src="B burger.jpg" style="height: 92px;" alt="BBB burger">
+                    <figcaption style="max-width: 350px;" class="text2">About 300 grams (before grilling) of fresh,
+                        high-quality ground meat
+                        Served in a bun with iceberg lettuce, tomato, red onion and pickled cucumber slices</figcaption>
+                    <p class="text2">cost: 73₪</p>
+                    <span><button class="button">Order</button></span>
+                </div>
+
+                <div class="menu-item">
+                    <h4 class="text2">Beyond Burger</h4>
+                    <img src="beyond.avif" style="height: 92px;" alt="Beyond Burger">
+                    <figcaption style="max-width: 350px;" class="text2">Pea Protein Burger
+                        Served on a bun with iceberg lettuce, tomato, red onion and pickle slices</figcaption>
+                    <p class="text2">cost: 69₪</p>
+                    <span><button class="button">Order</button></span>
+                </div>
+
+                <div class="menu-item">
+                    <h4 class="text2">Garden burger</h4>
+                    <img src="garden.avif" style="height: 92px;" alt="Garden Burger">
+                    <figcaption style="max-width: 350px;" class="text2">A juicy mushroom and halloumi cheese patty.
+                        Served on a bun with iceberg lettuce, tomato, red onion and pickled cucumber slices</figcaption>
+                    <p class="text2"> cost 58₪</p>
+                    <span><button class="button">Order</button></span>
+                </div>
+
+                <div class="menu-item">
+                    <h4 class="text2">Nature burger</h4>
+                    <img src="nature.avif" style="height: 92px;" alt="Nature Burger">
+                    <figcaption style="max-width: 350px;" class="text2">Juicy beet and quinoa patty
+                        Served with iceberg lettuce, tomato, onion and home-pickled cucumber slices</figcaption>
+                    <p class="text2"> cost 56₪</p>
+                    <span><button class="button">Order</button></span>
+                </div>
+            </figure>
+        </div>
+    </main>
+    <hr>
+    <footer class="text" style="position: relative;">
+        
+        <br>
+        <p class="text2">address:<address class="text2">alonit ein shemer</address>
+        </p>
+    </footer>
+</body>
+
+</html>
