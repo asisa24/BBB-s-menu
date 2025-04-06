@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order now</title>
+    <style>
+        .collapsible-button {
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible-button:after {
+    content: '▼';
+    font-size: 10px;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible-content {
+   max-height: 0;
+    transition: max-height o.3s ease-out;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    padding: 0 10px;
+}
+
+.collapsible-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.collapsible-content ul li {
+    margin: 5px 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            order now!
+        </h1>
+    </header>
+    <hr>
+    <main>
+        
+    </main>
+    <div class="collapsible">
+        <button class="collapsible-button">▶ Menu</button>
+        <div class="collapsible-content">
+            <ul>
+                <li><a href="menu.html" target="_blank">Our burger menu</a></li>
+                <li><a href="menu2.html" target="_blank">Our main dishes menu</a></li>
+            </ul>
+        </div>
+    </div>
+    </main>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        var coll = document.querySelectorAll('.collapsible-button');
+        coll.forEach(function(button) {
+            button.addEventListener('click', function() {
+                this.classList.toggle('active');
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight === 'block') {
+                    content.style.maxHeight = 'none';
+                    this.innerHTML = '▶ Menu';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    this.innerHTML = '▼ Menu';
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
